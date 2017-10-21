@@ -15,6 +15,11 @@ public class Client {
         BeanFactory factory = new XmlBeanFactory(resource);
         //create Test class object
         Test test = (Test) factory.getBean("test");//from ref name of POJO class which we gives in xml file
-        test.sayHello();
+        System.out.println("--------------------------------");
+        Test test1 = (Test) factory.getBean("test");//from ref name of POJO class which we gives in xml file
+        System.out.println("--------------------------------");
+        Test test2 = (Test) factory.getBean("test");//from ref name of POJO class which we gives in xml file
+
+        test.sayHello();//Default it is singleton
     }
 }
