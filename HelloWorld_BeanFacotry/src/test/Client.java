@@ -21,6 +21,6 @@ public class Client {
         Test test2 = (Test) factory.getBean("test");//from ref name of POJO class which we gives in xml file
 
         System.out.println("=======================================");
-        test.sayHello();//Default it is singleton
+        test.sayHello();//Now it Prototype
     }
 }
